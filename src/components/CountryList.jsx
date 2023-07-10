@@ -3,6 +3,7 @@ import styles from "./CountryList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
 import flagemojiToPNG from "../../utils/flagemojiToPNG";
+import { useCities } from "../contexts/CititesContext";
 
 // const flagemojiToPNG = (flag) => {
 //   const countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt())
@@ -13,7 +14,9 @@ import flagemojiToPNG from "../../utils/flagemojiToPNG";
 //   );
 // };
 
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
