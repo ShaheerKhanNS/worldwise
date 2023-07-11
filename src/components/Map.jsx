@@ -14,21 +14,18 @@ import { useCities } from "../contexts/CititesContext";
 import flagemojiToPNG from "../../utils/flagemojiToPNG";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPostion";
 
 function Map() {
-  const navigate = useNavigate();
-
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
 
-  const mapLat = searchParams.get("lat") || 40.46635901755316;
-  const mapLng = searchParams.get("lng") || -3.7133789062500004;
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
