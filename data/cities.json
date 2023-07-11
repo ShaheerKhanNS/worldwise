@@ -35,6 +35,30 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Kunnatnad",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2023-07-11T10:40:54.110Z",
+      "notes": "INDIA",
+      "position": {
+        "lat": "10.115391754992755",
+        "lng": "76.50878906250001"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Boguchansky Rayon",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2023-07-11T11:44:28.144Z",
+      "notes": "Russia",
+      "position": {
+        "lat": "59.26696222709061",
+        "lng": "95.537109375"
+      },
+      "id": 98443203
     }
   ]
 }
