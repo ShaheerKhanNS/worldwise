@@ -7,7 +7,18 @@ const CitiesContext = createContext();
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [currentCity, setCurrentCity] = useState({});
+  const [currentCity, setCurrentCity] = useState({
+    cityName: "Madrid",
+    country: "Spain",
+    emoji: "🇪🇸",
+    date: "2027-07-15T08:22:53.976Z",
+    notes: "",
+    position: {
+      lat: 40.46635901755316,
+      lng: -3.7133789062500004,
+    },
+    id: 17806751,
+  });
 
   useEffect(function () {
     async function fetchCities() {
@@ -37,7 +48,7 @@ function CitiesProvider({ children }) {
       setCurrentCity(data);
     } catch {
       console.log("error");
-      alert("There was an error loading data");
+      alert("There was an error loading data...from getCity");
     } finally {
       setIsLoading(false);
     }
