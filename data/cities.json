@@ -47,6 +47,30 @@
         "lng": "76.50878906250001"
       },
       "id": 98443202
+    },
+    {
+      "cityName": "Montuiri",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-07-11T13:11:18.747Z",
+      "notes": "Island nation",
+      "position": {
+        "lat": "39.578353188327725",
+        "lng": "3.0102539062500004"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Sarkisla",
+      "country": "Turkiye",
+      "emoji": "🇹🇷",
+      "date": "2023-07-11T13:12:31.094Z",
+      "notes": "Turkey",
+      "position": {
+        "lat": "39.5649855286233",
+        "lng": "36.38671875000001"
+      },
+      "id": 98443205
     }
   ]
 }

@@ -30,7 +30,7 @@ function City() {
 
   if (isLoading) return <Spinner />;
 
-  const Emoji = flagemojiToPNG(emoji);
+  const Emoji = flagemojiToPNG(emoji || "PT");
 
   return (
     <div className={styles.city}>

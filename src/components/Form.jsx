@@ -51,7 +51,6 @@ function Form() {
           );
 
           const data = await res.json();
-          console.log(data);
           if (!data.countryCode)
             throw new Error(
               "That doesn't seem to be city.Click somewhere else 😥"
